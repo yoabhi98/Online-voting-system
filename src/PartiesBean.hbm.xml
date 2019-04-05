@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping>  
+  <class name="com.cdac.model.PartiesBean" table="Parties">  
+    <id name="id">  
+     <generator class="native"></generator>  
+    </id>  
+         <property name="PartyName" type="string" length="500" not-null="true" column="PartyName"></property>
+      <property name="LeaderName" type="string" length="500" not-null="true" column="LeaderName"></property>
+       <property name="votes" type="long" not-null="true" column="votes"></property>       
+  </class>  
+            
+ </hibernate-mapping>

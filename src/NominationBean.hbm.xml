@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping>  
+  <class name="com.cdac.model.NominationBean" table="Nomination_details">  
+    <id name="CandidateAadhar">  
+     <generator class="assigned"></generator>  
+    </id>  
+        <property name="Status" type="string" length="50" not-null="true" column="Status"></property>          
+    <property name="CandidateName" type="string" length="50" not-null="true" column="CandidateName"></property>
+    <property name="PartyName" type="string" length="50" not-null="true" column="PartyName"></property>
+      <property name="Address" type="string" length="500" not-null="true" column="Address"></property>
+       <property name="CandidateEmail" type="string" length="100" not-null="true" column="Email"></property>
+       
+         <property name="Mobile" type="string" length="10" not-null="true" column="Phone_Number"></property> 
+    <property name="CandidatePass" type="string" length="255" not-null="true"></property>  
+          <property name="gender" type="string" length="25" not-null="true"></property>
+           <property name="votes" type="int" not-null="true"></property>
+               
+  </class>  
+            
+ </hibernate-mapping> 
